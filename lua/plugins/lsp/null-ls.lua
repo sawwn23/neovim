@@ -25,7 +25,7 @@ null_ls.setup({
     formatting.isort, --python
     formatting.black.with { extra_args = { "--fast" } }, --python
     formatting.stylua, -- lua formatter
-    diagnostic.flake8,
+    diagnostics.flake8,
     diagnostics.eslint_d.with({ -- js/ts linter
       -- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
       condition = function(utils)
